@@ -1,0 +1,11 @@
+ {
+  "name"         : "node-restaurantDiary",
+  "version"      : "0.0.0",
+  "description"  : "Restaurant Diary.",
+  "main"         : "server.js",
+  "author"       : "Sriprabha",
+  "dependencies" : {
+    "express"    : "~3.4.4",
+    "mongoose"   : "~3.6.2"
+    }
+  }

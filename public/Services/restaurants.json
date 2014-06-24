@@ -1,0 +1,42 @@
+[
+	{
+		"name": "Patrick Janes Pizza",
+		"location": "Cary",
+		"address": "1353 Kildaire Farm Rd, Cary, NC 27511",
+		"contact": "(919) 388-8001",
+		"category": "Dining",
+		"rating": "5 stars"
+	},
+	{
+		"name": "Orange Leaf",
+		"location": "Raleigh",
+		"address": "4035 Lake Boone Trail, Raleigh, NC 27607",
+		"contact": "(919) 322-2724 ",
+		"category": "Dessert",
+		"rating": "4 stars"
+	},
+	{
+		"name": "Rosetta",
+		"location": "Asheville",
+		"address": "111 Broadway, Asheville, NC 28801",
+		"contact":"(828) 232-0738",
+		"category": "Dining",
+		"rating": "5 stars"
+	},	
+	{
+		"name": "The Chocolate Lounge",
+		"location": "Asheville",
+		"address": "10 S Lexington Ave, Asheville, NC 28801",
+		"contact":"(828) 252-4181",
+		"category": "Dessert",
+		"rating": "4 stars"
+	},
+	{
+		"name": "Chai Pani",
+		"location": "Asheville",
+		"address": "22 Battery Park Ave, Asheville, NC 28801",
+		"contact":"(828) 254-4003",
+		"category": "Dining",
+		"rating": "3 stars"
+	}
+]

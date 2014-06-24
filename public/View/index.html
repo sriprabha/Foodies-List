@@ -1,0 +1,38 @@
+<html ng-app="restaurantFinder">
+	<head>
+		<title>My restaurants</title>
+		<link rel="stylesheet" type="text/css" href="../css/search.css">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.js"></script>
+		<script src="../Controller/app.js"></script>
+		<script src="../Services/restaurants.json"></script>
+		<script src="../Controller/searchCtrl.js"></script>
+		<script src="../Directives/formDir.js"></script>
+		<script src="../Directives/numbersOnly.js"></script>
+	</head>
+	<body ng-controller="searchCtrl">
+
+		<h1 class="header"> Restaurant diary</h1>
+		<div class="searchHeaderRow">
+			<input class="searchBox" type="text" placeholder="Search for your favorites!" ng-model="item">
+		</div>
+		<div class="container">
+			<div class="results">
+				<div class="result" ng-repeat="item in items track by $index|filter:item">
+					<span class="name subheader">{{item.name}}</span>
+					<a href="{{url}}" class="route subheader" target="_blank" ng-click="openSite(item)"><img src="../css/16px-Map_symbol-pin.svg.png"></a>
+					<span class="category subheader">{{item.category}}</span>
+					<div class="other"> {{item.address}} </div>
+					<div class="other"> {{item.location}} </div>
+					<div class="other"> {{item.contact}} </div>
+					<div class="other"> {{item.rating}} stars
+					<input class="delete" type="button" value="" ng-click="delete(item.contact)">
+					</div>
+				</div>
+			</div>
+
+			<form:Dir/>
+		</div>
+
+	</body>
+
+</html>

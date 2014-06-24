@@ -1,0 +1,139 @@
+body {
+	font:15px/1.3 'Open Sans', sans-serif;
+	color: white;
+	text-align:center;
+	background-image: url('1280px-Supreme_pizza.jpg');
+	background-size: 100%;
+}
+
+h1{
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	text-transform: uppercase;
+	margin-top:85px;
+}
+
+a {
+	display:block;
+}
+
+h1, .result, .inputForm, .button{
+	background-color:#212121;
+	opacity: 0.5;
+	border:2px solid black;
+
+}
+.results {
+	overflow-y:scroll;
+	height:400px;
+	width:57%;
+	float:left;
+	
+}
+
+.searchBox {
+	padding:2px;
+}
+
+.searchHeaderRow {
+	margin:18px auto 10px 100px;
+	width:400px;
+	font-weight: bold;
+}
+
+.subheader {
+	margin-bottom:6px;
+}
+
+.other {
+	clear:both;
+	text-align:left;
+}
+
+.name {
+	font-weight: bold;
+	float:left;
+	clear:both;
+	font-size:17px;
+}
+
+.category {
+	float:right;
+	font-style: italic;
+}
+
+.result {
+	margin-top:4px;
+}
+
+.button {
+	float: right;
+	font:inherit;
+	color:inherit;
+	cursor: pointer;
+	border: 2px solid white;
+	font-weight:bold;
+}
+
+.route {
+	float:left;
+	margin-left: 10px;
+}
+
+.inputForm {
+	width:350px;
+	height:300px;
+	margin-left: auto;
+	margin-right:auto;
+	width:30%;
+	float:right;
+	margin-top:60px;
+}
+
+.inputField {
+	padding:8px;
+	margin-top:8px;
+	width:340px;
+	clear:both;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width:1200px;
+	position:relative;
+}
+
+.title {
+	font-size:17px;
+	font-weight: bold;
+}
+
+.text {
+	float:left;
+}
+
+.value {
+	float:right;
+}
+
+.ratings {
+	color:black;
+	width:48px;
+	margin-left:-131px;
+}
+
+.result{
+	height:113px;
+}
+
+.delete {
+	background: url('32px-Deletion_icon.svg.png') no-repeat;
+	background-size: 100%;
+	opacity: 0.9;
+	border:none;
+	cursor: pointer;
+	float: right;
+	margin-right: 2px;
+}

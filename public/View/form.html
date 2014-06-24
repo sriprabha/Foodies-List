@@ -1,0 +1,34 @@
+
+<form name="inputForm" class="inputForm" ng-submit="submitForm()">
+	<span class="title"> Add your favorite restaurant to the list! </span>
+	<div class="inputField">
+		<span class="text"> Name </span>
+		<input class="value" type="text" ng-model="name" required>
+	</div>
+	<div class="inputField">
+		<span class="text">Address </span> 
+		<input class="value" type="text" ng-model="address" required>
+	</div>
+	<div class="inputField">
+		<span class="text">Location </span>
+		<input class="value" type="text" ng-model="location" required>
+	</div>
+	<div class="inputField">
+		<span class="text">Contact </span> 
+		<input class="value" type="text" ng-model="contact" numbers-only required>
+	</div>
+	<div class="inputField">
+		<span class="text">Category </span> 
+		<input class="value" type="text" ng-model="category" required>
+	</div>
+	<div class="inputField">
+		<span class="text">Rating </span> 
+		<select class="ratings" ng-model="selectedOption" ng-options="r.rating for r in ratings">
+			<option value="">-- Select a rating --</option>
+		</select>
+	</div>
+	<div class="inputField">
+		<input class="button title" type="submit" value="Add">
+	</div>
+</form>
+
