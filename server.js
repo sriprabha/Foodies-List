@@ -8,7 +8,7 @@
 
 	// configuration =================
 
-	mongoose.connect('mongodb://user:user@novus.modulusmongo.net:27017/pahyrO9r'); 	// connect to mongoDB database on modulus.io
+	mongoose.connect('mongodb://*******:********@novus.modulusmongo.net:27017/pahyrO9r'); 	// connect to mongoDB database on modulus.io
 
 	var db = mongoose.connection;
 	db.on('error', console.error.bind(console, 'connection error:'));
