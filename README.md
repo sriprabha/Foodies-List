@@ -1,4 +1,4 @@
-Restaurant-Diary
+Foodie's List
 ================
 
-An app to save and query your favourite restaurants in a particular location
+A web app to maintain and query favorite restaurants in any location. 
