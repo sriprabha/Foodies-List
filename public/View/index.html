@@ -17,7 +17,7 @@
 		</div>
 		<div class="container">
 			<div class="results">
-				<div class="result" ng-repeat="item in items track by $index|filter:item">
+				<div class="result" ng-repeat="item in items |filter:item">
 					<span class="name subheader">{{item.name}}</span>
 					<a href="{{url}}" class="route subheader" target="_blank" ng-click="openSite(item)"><img src="../css/16px-Map_symbol-pin.svg.png"></a>
 					<span class="category subheader">{{item.category}}</span>
