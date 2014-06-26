@@ -26,7 +26,7 @@ h1, .result, .inputForm, .button{
 }
 .results {
 	overflow-y:scroll;
-	height:400px;
+	height:366px;
 	width:57%;
 	float:left;
 	
