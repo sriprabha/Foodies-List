@@ -2,13 +2,15 @@
 	var express  = require('express');
 	var app      = express(); 								// create our app w/ express
 	var mongoose = require('mongoose'); 
+	var schema   = mongoose.Schema;
+	var objectId = schema.ObjectId;
 
 	
 					// mongoose for mongodb
 
 	// configuration =================
 
-	mongoose.connect('mongodb://*******:********@novus.modulusmongo.net:27017/pahyrO9r'); 	// connect to mongoDB database on modulus.io
+	mongoose.connect('mongodb://user:user@novus.modulusmongo.net:27017/pahyrO9r'); 	// connect to mongoDB database on modulus.io
 
 	var db = mongoose.connection;
 	db.on('error', console.error.bind(console, 'connection error:'));
@@ -23,12 +25,13 @@
 	});
 
 	var restaurantSchema =mongoose.Schema ({
-		name:String,
-		address:String,
-		location:String,
-		contact:Number,
-		category:String,
-		rating:Number
+		_id: objectId,
+		name:{type:String, required:true},
+		address:{type:String, required:true},
+		location:{type:String, required:true},
+		contact:{type:Number, required:true},
+		category:{type:String, required:true},
+		rating:{type:Number, required:true}
 	});
 
 	var Restaurant=mongoose.model("Restaurant",restaurantSchema);
@@ -63,10 +66,10 @@
 				});
 		});
 	});
-
-	app.delete('/api/restaurants/:restaurant_contact',function(req,res){
+	
+	app.delete('/api/restaurants/:restaurant_id',function(req,res){
 		Restaurant.remove({
-			contact:req.params.restaurant_contact
+			_id:req.params.restaurant_id
 		},function(err,restaurant){
 			if(err)
 				res.send(err);

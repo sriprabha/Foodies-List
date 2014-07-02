@@ -17,8 +17,8 @@ angular.module('restaurantFinder').controller('searchCtrl',function($scope,$http
 		console.log('Error:'+data);
 	});
 
-	$scope.delete=function(contact){
-		$http.delete('/api/restaurants/'+contact)
+	$scope.delete=function(restaurant_id){
+		$http.delete('/api/restaurants/'+restaurant_id)
 			.success(function(data){
 				$scope.items=data;
 				console.log(data);

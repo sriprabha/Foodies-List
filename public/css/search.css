@@ -4,6 +4,9 @@ body {
 	text-align:center;
 	background-image: url('1280px-Supreme_pizza.jpg');
 	background-size: 100%;
+	width:1254px;
+	height:500px;
+	margin:18px;
 }
 
 h1{
@@ -37,7 +40,7 @@ h1, .result, .inputForm, .button{
 }
 
 .searchHeaderRow {
-	margin:18px auto 10px 100px;
+	margin-bottom:18px;
 	width:400px;
 	font-weight: bold;
 }
@@ -136,4 +139,10 @@ h1, .result, .inputForm, .button{
 	cursor: pointer;
 	float: right;
 	margin-right: 2px;
+}
+
+.copyright {
+	float: left;
+	margin-top: 76px;
+	margin-left: 501px;
 }
