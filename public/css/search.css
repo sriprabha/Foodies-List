@@ -99,6 +99,7 @@ h1, .result, .inputForm, .button{
 	margin-top:8px;
 	width:340px;
 	clear:both;
+	height:10px;
 }
 
 .container {

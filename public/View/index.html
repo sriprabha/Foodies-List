@@ -8,6 +8,7 @@
 		<script src="../Controller/searchCtrl.js"></script>
 		<script src="../Directives/formDir.js"></script>
 		<script src="../Directives/numbersOnly.js"></script>
+		<script src="../Directives/confirmDialog.js"></script>
 	</head>
 	<body ng-controller="searchCtrl">
 
@@ -17,15 +18,15 @@
 		</div>
 		<div class="container">
 			<div class="results">
-				<div class="result" ng-repeat="item in items |filter:item">
+				<div class="result" ng-repeat="item in items | filter:item">
 					<span class="name subheader">{{item.name}}</span>
 					<a href="{{url}}" class="route subheader" target="_blank" ng-click="openSite(item)"><img src="../css/16px-Map_symbol-pin.svg.png"></a>
 					<span class="category subheader">{{item.category}}</span>
 					<div class="other"> {{item.address}} </div>
 					<div class="other"> {{item.location}} </div>
 					<div class="other"> {{item.contact}} </div>
-					<div class="other"> {{item.rating}} stars
-					<input class="delete" type="button" value="" ng-click="delete(item._id)">
+					<div class="other"> {{item.rating}} stars 
+						<input class="delete" type="button" value="" ng-click="delete(item._id)" ng-confirm-click="Are you sure you want to delete?">
 					</div>
 				</div>
 			</div>

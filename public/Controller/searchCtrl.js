@@ -8,6 +8,7 @@ angular.module('restaurantFinder').controller('searchCtrl',function($scope,$http
 		{rating: '5'} 
 	];
 
+
 	
 	$http.get('/api/restaurants').success(function(data){
 		$scope.items=data;
